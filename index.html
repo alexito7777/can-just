@@ -65,7 +65,9 @@ section { scroll-margin-top: 72px; }
 .top.scrolled:hover { opacity: 1; }
 .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 12px; }
 .brand { text-decoration: none; line-height: 1; display: flex; align-items: baseline; gap: 12px; }
-.brand .just { font-family: var(--f-display); font-size: 2.1rem; letter-spacing: .08em; }
+.brand .name { display: inline-flex; align-items: baseline; gap: .3em; font-family: var(--f-display); font-size: 2.1rem; }
+.brand .can { font-weight: 700; letter-spacing: .04em; color: #111; }
+.brand .just { letter-spacing: .08em; }
 .brand small { font-size: .62rem; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); }
 .nav { display: flex; align-items: center; gap: 26px; }
 .nav a:not(.pill) { text-decoration: none; font-size: .92rem; color: var(--ink); padding: 4px 0; border-bottom: 1px solid transparent; transition: border-color .25s, color .25s; }
@@ -73,11 +75,11 @@ section { scroll-margin-top: 72px; }
 .pill { display: inline-block; text-decoration: none; background: var(--red); color: #fff; font-weight: 600; font-size: .9rem; padding: 10px 22px; border-radius: 999px; transition: transform .25s var(--ease), filter .25s; }
 .pill:hover { filter: brightness(1.1); transform: translateY(-1px); }
 @media (max-width: 1000px) { .nav a.opt { display: none; } .nav { gap: 16px; } }
-@media (max-width: 520px) { .brand small { display: none; } .brand .just { font-size: 1.8rem; } }
+@media (max-width: 520px) { .brand small { display: none; } .brand .name { font-size: 1.8rem; } }
 
 /* ============ Hero ============ */
-.hero { position: relative; background: var(--night); color: var(--on-night); overflow: hidden; --just: var(--red-hi); }
-.hero-img { position: absolute; top: -8%; right: 0; width: 56%; height: 116%; object-fit: cover; object-position: left center; filter: brightness(1.55) contrast(1.05) saturate(1.1); will-change: transform;
+.hero { position: relative; background: #140B09; color: var(--on-night); overflow: hidden; --just: var(--red-hi); }
+.hero-img { position: absolute; top: -8%; right: 0; width: 56%; height: 116%; object-fit: cover; object-position: left center; filter: brightness(1.75) contrast(1.05) saturate(1.1); will-change: transform;
   -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 50%); mask-image: linear-gradient(90deg, transparent 0, #000 50%); }
 .hero .wrap { position: relative; z-index: 1; padding-block: 104px 120px; }
 .hero .eyebrow { color: var(--accent); }
@@ -265,7 +267,7 @@ footer .bar .wrap { padding-block: 20px; font-size: .82rem; color: var(--on-nigh
 
 <header class="top" id="top">
   <div class="wrap">
-    <a class="brand" href="#inici" aria-label="JUST, cansaladeria i xarcuteria · inici"><b class="just">JUST</b><small>Cansaladeria · des de 1887</small></a>
+    <a class="brand" href="#inici" aria-label="Can JUST, cansaladeria i xarcuteria · inici"><span class="name"><b class="can">Can</b> <b class="just">JUST</b></span><small>Cansaladeria · des de 1887</small></a>
     <!-- L'ordre del menú és el mateix que el de la pàgina -->
     <nav class="nav" aria-label="Principal">
       <a class="opt" href="#inici">Inici</a>
